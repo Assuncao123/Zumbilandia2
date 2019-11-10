@@ -1,0 +1,48 @@
+<div class="col-md-5 imagemLateral">
+</div>
+<div class="offset-md-5 col-md-5">
+<form [formGroup]="form"  >
+<div class="form-group">
+    <label for="nome" class="control-label">Nome Completo</label>
+    <input type="text" formControlName="nome"
+      class="form-control col-md-9" id="nome"
+      [ngClass]="{'is-invalid': form.get('nome').invalid && form.get('nome').dirty}">
+</div>
+
+          <div class="form-group">
+            <label for="rg" class="control-label">RG*</label>
+            <input type="text" formControlName="rg"
+              class="form-control col-md-9" id="rg"
+              [ngClass]="{'is-invalid': form.get('rg').invalid && form.get('rg').dirty}">
+            </div>
+
+              <div class="form-group">
+              <label for="rg" class="control-label">Data de Nascimento*</label>
+            <input type="text" formControlName="dataNascimento"
+              class="form-control col-md-9" id="dataNascimento"
+              [ngClass]="{'is-invalid': form.get('dataNascimento').invalid && form.get('dataNascimento').dirty}">
+            </div>
+
+              <div class="form-group">
+              <label for="uf" class="control-label">Uf*</label>
+            <input type="text" formControlName="uf"
+              class="form-control col-md-9" id="uf"
+              [ngClass]="{'is-invalid': form.get('uf').invalid && form.get('uf').dirty}">
+            </div>
+
+              <div class="form-group">
+              <label for="celular" class="control-label">Celular*</label>
+            <input type="text" formControlName="celular"
+              class="form-control col-md-9" id="celular"
+              [ngClass]="{'is-invalid': form.get('celular').invalid && form.get('celular').dirty}">
+            </div>
+
+              <div class="form-group">
+              <label for="acompanhante" class="control-label">Acompanhante*</label>
+            <input type="text" formControlName="acompanhante"
+              class="form-control col-md-9" id="acompanhante"
+              [ngClass]="{'is-invalid': form.get('acompanhante').invalid && form.get('acompanhante').dirty}">
+            <button type="submit" class="btn btn-primary" (click)="submit()">Salvar</button>
+</div>
+</form>
+</div>

@@ -1,0 +1,7 @@
+.imagemLateral {
+  background-image: url("../../../dist/imagePoster.png");
+  height: 800px;
+ }
+ input{
+  border:1px solid yellow;
+ }
